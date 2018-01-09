@@ -1,0 +1,111 @@
+* {
+    font-family: Verdana, Geneva, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+
+    height: 100%;
+    background-color: lightblue;
+}
+
+.row {
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    height: 50px;
+    margin-left: 40px;
+}
+
+@media (min-width: 1200px) {
+    .row:before, .row:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+}
+
+.base {
+    font-family: verdana;
+    font-size: 12px;
+}
+
+.side {
+    float: left;
+    text-align: center;
+    margin: 12px;
+}
+
+.side > .screen, .selectOne, .start-btn {
+    width: 75px;
+    height: 30px;
+    margin-left: 3px;
+    margin-right: 15px;
+}
+
+.screen {
+    background-color: darkgrey;
+    padding-top: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px gray outset;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5em;
+    width: 430px;
+    height: auto;
+    margin-left: 35%;
+    margin-right: 40%;
+    color: white;
+}
+
+.holder-40 {
+    text-align: center;
+    margin-top: 2em;
+    width: 430px;
+    height: auto;
+    margin-left: 35%;
+    margin-right: 40%;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    background-color: #e4e4e4;
+    box-shadow: 3px 3px 5px 0 gray;
+}
+
+.button-holder {
+    margin: 5px;
+}
+
+.buttons {
+    width: auto;
+    height: auto;
+    background-color: lightgray;
+}
+
+.singleBtn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #bdbbbb;
+}
+#disabled {
+    border: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../RESOURCES/one.gif");
+}
+
+
+#isBomb {
+    border: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../RESOURCES/bomb.jpg");
+}
